@@ -1,9 +1,4 @@
-from dataclasses import dataclass
-@dataclass
-class Produit:
-        nom : str
-        prix: float
-        stock: int
+from  models.produit import Produit
 
 tableau_info_produit = []
 def info_produit():
@@ -17,7 +12,9 @@ def afficher_tableau():
         print("-----tableau des produits présentes-----")
         for p in tableau_info_produit:
                 print(f"nom du produit :  {p.nom} | prix du produit : {p.prix} | stock du produit : {p.stock}")
-info_produit()
-afficher_tableau()
+if __name__ == "--main--":
+        info_produit()
+        afficher_tableau()
+
 
         
