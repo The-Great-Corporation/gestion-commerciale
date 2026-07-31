@@ -3,4 +3,4 @@ from dataclasses import dataclass
 class Produit:
     nom : str
     prix: float
-    xtock : int
+    stock : int 
