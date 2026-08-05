@@ -22,7 +22,7 @@ def afficher_tableau():
         print("-----tableau des produits présentes-----")
         for p in tableau_info_produit:
                 print(f"nom du produit :  {p.nom} | prix du produit : {p.prix} | stock du produit : {p.stock}")
-if __name__ == "--main--":
+if __name__ == "__main__":
         info_produit()
         afficher_tableau()
 
